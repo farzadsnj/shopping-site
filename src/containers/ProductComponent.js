@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function ProductComponent() {
   const products = useSelector((state) => state.allProducts.products);
-//   console.log("comProducts:", products);
+  //   console.log("comProducts:", products);
   const renderList = products.map((product) => {
     const { id, title, image, price, categoty } = product;
     return (
@@ -26,7 +26,6 @@ function ProductComponent() {
       </div>
     );
   });
-
   return <>{renderList}</>;
 }
 
